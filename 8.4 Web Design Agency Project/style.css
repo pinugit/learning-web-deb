@@ -41,3 +41,25 @@ footer {
 .card{
   width: 45%;
 }
+
+@media (max-width: 680px) {
+  .card{
+    clear: both;
+  }
+  .logo{
+    width: 50%;
+  }
+  h1{
+    font-size: 3rem;
+    text-align: center;
+  }
+  .tile-image{
+    clear: left;
+    height:;
+    width:100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
