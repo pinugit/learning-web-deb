@@ -1,29 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /*
+      Write your CSS here
+      Gap Colour: #000
+      White: #F0F1EC
+      Red: #E72F24
+      Black: #232629
+      Blue: #004592
+      Yellow: #F9D01E
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mondrian Project</title>
-  <style>
-    /* 
-    Write your CSS here 
-    Gap Colour: #000
-    White: #F0F1EC
-    Red: #E72F24
-    Black: #232629
-    Blue: #004592
-    Yellow: #F9D01E
+      For dimensions, see dimensions.png image.
+      HINT: Remember you can't change the properties of grid lines.
+      But grid lines are transparent!
+      */
+      .container {
+        width: 748px;
+        height: 748px;
+        background: #000;
+        display: grid;
+        grid-template-columns: 320px 193px 153px auto;
+        grid-template-rows: 414px 130px 155px auto;
+        gap: 10px;
+      }
+      .red {
+        background: #e72f24;
+      }
+      .white {
+        background: #f0f1ec;
+      }
+      .w1 {
+        grid-column: span 3;
+      }
+      .w2 {
+        grid-row-start: 2;
+        grid-row-end: 4;
+      }
+      .w3 {
+        grid-area: 2/2/4/4;
+      }
+      .blue {
+        background: #004592;
+        grid-area: 2/4/3/5;
+      }
+      .w4 {
+        grid-row: span 2;
+      }
+      .yellow {
+        grid-area: 4/2/5/3;
+        background: #f9d01e;
+      }
+      .black {
+        background: #000;
+      }
+      .flex_container {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
 
-    For dimensions, see dimensions.png image.
-    HINT: Remember you can't change the properties of grid lines.
-    But grid lines are transparent!
-    */
-  </style>
-</head>
-
-<body>
-  <!-- Write your HTML here -->
-</body>
-
+  <body>
+    <div class="flex_container">
+      <div class="container">
+        <div class="card red"></div>
+        <div class="card white w1"></div>
+        <div class="card white w2"></div>
+        <div class="card white w3"></div>
+        <div class="card white w4"></div>
+        <div class="card white w5"></div>
+        <div class="card yellow"></div>
+        <div class="card black"></div>
+        <div class="card blue"></div>
+      </div>
+      <!-- Write your HTML here -->
+    </div>
+  </body>
 </html>
